@@ -1,0 +1,23 @@
+/* Class selector for the three odd elements */
+.odd {
+    background-color: #e07575;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+/* Class selector for middle element, which is also odd */
+.special {
+    font-size: 24px;
+}
+
+/* ID selector for 2nd element of id unique1 */
+#unique1 {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+/* ID selector for 4th element of id unique2 */
+#unique2 {
+    background-color: #90ee90;
+    font-size: 24px;
+    font-weight: bold;
+}
