@@ -1,0 +1,10 @@
+/* Chaining: No space, selects things that satisfy all chained classes/IDs */
+.avatar.proportioned {
+    width: 300px;
+}
+
+/* Make sure to specifiy width, height with px, not just number */
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}
