@@ -1,0 +1,15 @@
+/* Rule for multiple classes: COMMA SEPARATED (each begins with period) */
+.dark,
+.orange {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+.dark {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.orange {
+    background-color: orange;
+}
