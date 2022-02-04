@@ -3,25 +3,59 @@ body {
   font-family: sans-serif;
 }
 
+/* Added padding;
+    The three child elements serve as card content,
+    padding the card makes space around the 3 children
+*/
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
+/* 
+Topmost element: added top and bottom margin
+changed font size to be bigger
+added some padding as example text has more cushion
+*/
 .title {
   background: #e3f4ff;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  padding: 9px;
 }
 
+/* 
+ Added bottom margin and some padding
+*/
 .content {
   background: #e3f4ff;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 
+/* 
+Aligned text to center
+added a little padding
+ */
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  padding: 4px;
 }
 
+/* 
+added "margin: 0 auto":
+first val means top and bottom margin is 0
+2nd, auto, means it will calculate left and right from available
+space and make them equal, therefore centering button
+*/
 button {
+  display: block;
   background: white;
   border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
