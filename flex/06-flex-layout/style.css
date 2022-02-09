@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Turned into flex container, flex it vertically */
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +27,61 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  /* color: lightgray */
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  background-color: lightgray;
+  padding: 8px;
+}
+
+.content {
+  
+  /* My version...which looked fine. lets practice what the solution does. */
+  text-align: center;
+  margin: auto;
+  
+  /* Stolen shamelessly from solution ;P */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* LIST HAS DEFAULT MARGIN AND PADDING - IF YOU HAVE RANDOM SPACE REMEMBER TO OVERWRITE IT */
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.left-links, .right-links {
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 16px; */
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+/* Added padding */
+button {
+  padding: 8px;
 }
