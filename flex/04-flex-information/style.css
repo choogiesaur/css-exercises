@@ -7,9 +7,33 @@ img {
   height: 100px;
 }
 
+/* Added this to hold and center title */
+/* Margin at bottom */
+.title-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+}
+
+/* Box to hold items. Flex, centered content horiz, 52px gap */
+.item-holder {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* I initially did width but max-width was in soln
+TODO: Look up why */
+.item {
+  max-width: 200px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* do not edit this footer */
