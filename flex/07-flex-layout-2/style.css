@@ -2,27 +2,76 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Made a custom "header" with a generic div, made it flex, now the html text will be treated as an item */
 .header {
-  height: 72px;
+  height: 32px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
 }
 
+/* Same as header; make it a flex container */
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
 }
 
+/* Dont allow it to shrink */
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
+/* Remove list style (By default has margin and padding) */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove all text decoration */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+} 
+
+/* Give it padding and make the items in it wrap */
+.cardbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+/* Give cards a default width, add padding and margin */
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+}
+
+/* This is the 2nd of 3 items in the vertical body flexbox */
+/* We make it a flex container for its items, sidebar and cardbox */
+/* We allow it to grow to take up all the avail space above footer, remember its flexing vertically */
+.middle {
+  display: flex;
+  flex: 1;
 }
